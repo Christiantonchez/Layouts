@@ -1,0 +1,1 @@
+La solucion Layouts muestra ejemplos de uso de los Layouts de .NET MAUI
