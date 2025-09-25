@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Layouts.Grid.MainPage"
+             Title="Grid">
+    <Grid
+        Margin="16"
+        Padding="16"
+        BackgroundColor="Beige"
+        RowSpacing="8"
+        ColumnSpacing="12">
+         
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+        <Button
+            Text="UNO"/>
+        <Button
+            Text="DOS"
+            Grid.Row="0"
+            Grid.Column="1"
+            Grid.RowSpan="2"
+            BackgroundColor="Green"/>
+        <Button 
+            Text="TRES"
+            Grid.Row="0"
+            Grid.Column="2"/>
+
+        <Button 
+            Text="CUATRO"
+            Grid.Row="1"
+            Grid.Column="0"/>
+        <!--<Label 
+            Text="ESTO ES UN TEXTO"
+            Grid.Row="1"
+            Grid.Column="1"/>-->
+        <Button 
+            Text="CINCO"
+            Grid.Row="1"
+            Grid.Column="2"/>
+        <Button 
+            Text="SEIS"
+            Grid.Row="2"
+            Grid.Column="0"/>
+        <HorizontalStackLayout
+            Grid.Row="2"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            VerticalOptions="Center"
+            BackgroundColor="Brown"
+            Spacing="16">
+            
+            
+        <Button 
+            Text="ACEPTAR"/>
+        <Button 
+            Text="CANCELAR"/>
+        </HorizontalStackLayout>
+    </Grid>
+
+
+</ContentPage>
+    
+    <!--aracley-->
