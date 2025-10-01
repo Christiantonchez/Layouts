@@ -2,25 +2,20 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Layouts.Grid.MainPage"
-             Title="Grid">
+             Title="Grid"
+    BackgroundColor="Beige">
+    
+    
     <Grid
+        RowDefinitions="*,*,2*"
+        ColumnDefinitions="2*,2*, *"
         Margin="16"
         Padding="16"
         BackgroundColor="Beige"
         RowSpacing="8"
         ColumnSpacing="12">
          
-        <Grid.RowDefinitions>
-            <RowDefinition Height="200"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="*"/>
 
-        </Grid.ColumnDefinitions>
         <Button
             Text="UNO"/>
         <Button
@@ -38,10 +33,7 @@
             Text="CUATRO"
             Grid.Row="1"
             Grid.Column="0"/>
-        <!--<Label 
-            Text="ESTO ES UN TEXTO"
-            Grid.Row="1"
-            Grid.Column="1"/>-->
+
         <Button 
             Text="CINCO"
             Grid.Row="1"
@@ -69,4 +61,3 @@
 
 </ContentPage>
     
-    <!--aracley-->
